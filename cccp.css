@@ -107,6 +107,7 @@ main{
 
 .main-img:hover{
     transform:scale(1.02);
+    box-shadow: 0 10px 35px rgba(255, 215, 0, 1);
 }
 
 /* ===== FOOTER ===== */
@@ -159,4 +160,26 @@ footer{
     margin: 40px auto;
     padding: 40px;
     border-radius: 30px;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a{
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+a.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
