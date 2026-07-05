@@ -13,7 +13,7 @@ body{
 /* ===== HEADER ===== */
 
 header{
-    background:#556b2f;
+    background:#8b4513;
     padding:20px 0;
     box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
@@ -113,7 +113,7 @@ main{
 
 footer{
     height:80px;
-    background:#556b2f;
+    background:#8b4513;
     margin-top:60px;
 }
 
