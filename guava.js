@@ -12,25 +12,10 @@ for(let i = 0; i < picture.length; i++){
 
     let card = document.createElement("div");
     card.className = 'card'
-    card.classList.add('animate')
+
 
     card.appendChild(img)
     card.appendChild(text)
 
     kartochki.appendChild(card)
 }
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, {
-    threshold: 0.15
-});
-
-document.querySelectorAll('.animate').forEach((el) => {
-    observer.observe(el);
-});
